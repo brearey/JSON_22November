@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="simple_json">{[
+{
+	\"MemberId\":\"1\",
+	\"Name\":\"Elena\",
+	\"Tel\":\"8(41144)24498\"
+},
+{
+	\"MemberId\":\"2\",
+	\"Name\":\"Evgeny\",
+	\"Tel\":\"8(924)6628934\"
+},
+{
+	\"MemberId\":\"3\",
+	\"Name\":\"Nikolay\",
+	\"Tel\":\"8(41144)24375\"
+}
+]}</string>
+</resources>

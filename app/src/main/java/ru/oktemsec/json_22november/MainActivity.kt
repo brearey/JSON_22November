@@ -37,15 +37,17 @@ class MainActivity : AppCompatActivity() {
             JsonResultTV.text = "results:\n $results"
             JsonMySiteTV.text = "Имя сайта:\n $mySiteName"
             JsonUrlTV.text = "Адрес сайта:\n $myUrl"
-            JsonArrayTV.text = "Developed by Abramov on kotlin"
+
 
             var stringArrayElement:String = "\n"
             val jsonArray:JSONArray = results.getJSONArray("array")
-            for (i in 0 until jsonArray.length()) {
+            for (i in 0 until jsonArray.length() - 1) {
+                Log.d("brearey", jsonArray.getJSONObject(i).toString())
                 val arrayElement:JSONObject = jsonArray.getJSONObject(i)
-                stringArrayElement += arrayElement.getString("element\n")
+                stringArrayElement += arrayElement.getString("element")
             }
-            Log.d("brearey", stringArrayElement)
+            JsonArrayTV.text = stringArrayElement
+
         }
         catch (e:JSONException) {
             Log.d("brearey", e.message.toString())

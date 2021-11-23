@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "JSON_22November"
 include ':app'
+include ':arrayJSON'
