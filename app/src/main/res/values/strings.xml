@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">JSON_22November</string>
+    <string name="simple_json">{\"results\":{\"sitename\":\"Разработка мобильных приложений\",\"url\":\"http:\/\/yakse.ru\",
+        \"array\":[
+        {\"element\":\"Элемент 1\"},
+        {\"element\":\"Элемент 2\"},
+        {\"element\":\"Элемент 3\"},
+        ]
+        }}</string>
 </resources>

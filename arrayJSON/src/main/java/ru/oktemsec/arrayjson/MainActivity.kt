@@ -41,4 +41,28 @@ class MainActivity : AppCompatActivity() {
             Log.d("brearey", e.message.toString())
         }
     }
+
+    private fun createJSON(): JSONArray {
+        val jsonArrayList: ArrayList<JSONObject> = ArrayList()
+        /*** Ряд 1  */
+        var mObject: JSONObject = JSONObject()
+        mObject.put("MemberID", "1")
+        mObject.put("Name", "Анна")
+        mObject.put("Tel", "4954876107")
+        jsonArrayList.add(mObject)
+        /*** Ряд 2  */
+        mObject = JSONObject()
+        mObject.put("MemberID", "2")
+        mObject.put("Name", "Николай")
+        mObject.put("Tel", "4954780121")
+        jsonArrayList.add(mObject)
+        /*** Ряд 3  */
+        mObject = JSONObject()
+        mObject.put("MemberID", "3")
+        mObject.put("Name", "Сардана")
+        mObject.put("Tel", "4954543211")
+        jsonArrayList.add(mObject)
+        return JSONArray(jsonArrayList)
+    }
+
 }
