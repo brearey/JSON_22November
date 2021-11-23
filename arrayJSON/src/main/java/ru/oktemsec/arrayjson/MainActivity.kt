@@ -20,10 +20,9 @@ class MainActivity : AppCompatActivity() {
             val listView: ListView = findViewById(R.id.listView)
 
             //val rawJSON = "[{\"MemberID\":\"1\",\"Name\":\"Елена\",\"Tel\":\"4954876107\"}" + ",{\"MemberID\":\"2\",\"Name\":\"Сергей\",\"Tel\":\"4954780121\"}" + ",{\"MemberID\":\"3\",\"Name\":\"Витя\",\"Tel\":\"4954543211\"}]"
-            val rawJSON = createJSON()
 
             try {
-                val data: JSONArray = rawJSON
+                val data: JSONArray = createJSON()
                 val arrayList:ArrayList<HashMap<String, String>> = ArrayList()
 
                 for (i in 0 until data.length()) {
